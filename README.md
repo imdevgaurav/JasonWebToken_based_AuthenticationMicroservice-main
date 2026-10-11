@@ -4,8 +4,6 @@ A production-minded authentication service built with Spring Boot, Spring Securi
 
 ## Why This Project Stands Out
 
-This project is designed to showcase the backend skills recruiters usually look for in a strong Java project:
-
 - secure JWT-based authentication with refresh-token flow
 - role-based authorization for `USER` and `ADMIN`
 - PostgreSQL persistence with Flyway migrations
@@ -36,7 +34,7 @@ This project is designed to showcase the backend skills recruiters usually look 
 - Logout with refresh-token revocation
 - Protected authenticated endpoint
 - Protected admin-only endpoint
-- Seeded demo users for quick walkthrough
+- Seeded demo users
 - Swagger UI at `/swagger-ui/index.html`
 - Health endpoint at `/actuator/health`
 
@@ -88,9 +86,8 @@ You can use your own PostgreSQL instance or Docker Compose.
 ./gradlew :app:bootRun
 ```
 
-### Demo Profile For Screenshots
-
-If you want a zero-setup demo for README screenshots and recruiter walkthroughs, run:
+### Demo Profile
+If you want a zero-setup walkthroughs, run:
 
 ```bash
 ./gradlew app:bootRun --args='--server.port=9900 --spring.profiles.active=demo'
@@ -100,6 +97,8 @@ This profile uses an in-memory H2 database, applies the same Flyway migration, a
 
 - `demo_user` / `Password1`
 - `demo_admin` / `AdminPass1`
+
+
 
 ### 4. Open Swagger
 
@@ -232,25 +231,25 @@ Shows persisted users, roles, and refresh tokens.
 
 ![Database Tables](docs/screenshots/database-tables.png)
 
-### Bonus Validation Screenshot
+### Validation Screenshot
 Shows duplicate-user handling and structured error responses.
 
 ![Duplicate User Error](docs/screenshots/validation-or-duplicate-user-error.png)
 
-### Bonus Invalid Token Screenshot
+### Invalid Token Screenshot
 Shows what happens when a refresh token or invalid token is used against a protected endpoint.
 
 ![Invalid Token Example](docs/screenshots/invalid-token-or-refresh-token-used.png)
 
-### Remaining Optional Screenshot
-- Add `docs/screenshots/ci-passing.png` after your GitHub Actions workflow is green.
+## Additional Documentation
 
-## Resume-Ready Highlights
+- [System Architecture](docs/architecture-diagram.md)
+- [Authentication Flow](docs/auth-flow.md)
+- [API Request Examples](docs/api-examples.md)
+- [Demo Responses](docs/live-demo-output.md)
 
-- Built a secure authentication service using Spring Boot, Spring Security, JWT, and PostgreSQL with login, signup, logout, refresh-token rotation-style revocation, and role-based authorization.
-- Added Flyway migrations, automated tests, Docker-based local setup, Swagger documentation, and a Postman collection to make the service easy to validate and demo.
+## Future Improvements
 
-## Next Additions
-
-- capture README screenshots after running the app and Postman flows
-- add integration tests with Testcontainers
+- Add PostgreSQL integration tests using Testcontainers.
+- Expand test coverage for authentication, authorization, and token lifecycle edge cases.
+- Improve observability and production deployment configuration.
