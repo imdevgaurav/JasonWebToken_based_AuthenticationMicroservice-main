@@ -1,6 +1,6 @@
 # Auth Service
 
-A production-minded authentication service built with Spring Boot, Spring Security, JWT, PostgreSQL, Flyway, Docker, and CI support.
+A authentication service built with Spring Boot, Spring Security, JWT, PostgreSQL, Flyway, Docker, and CI support.
 
 ## Why This Project Stands Out
 
