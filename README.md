@@ -1,31 +1,18 @@
 # Auth Service
 
-A authentication service built with Spring Boot, Spring Security, JWT, PostgreSQL, Flyway, Docker, and CI support.
+A secure JWT-based authentication microservice built using Java 21, Spring Boot 3, Spring Security, PostgreSQL, and Docker.
 
 ## Goal
 
-To develop a secure RESTful authentication microservice using Java, Spring Boot, and JWT, with role-based access control, refresh-token management, and PostgreSQL integration.
+To develop a secure and scalable RESTful authentication service that supports user authentication, role-based authorization, and token management while following modern backend development practices.
 
-## Project Deliverables
+## Key Highlights
 
-- **Authentication APIs:** User registration, login, token refresh, and logout.
-- **Security:** JWT-based authentication, role-based authorization (`USER` and `ADMIN`), and refresh-token revocation.
-- **Database:** PostgreSQL integration using Spring Data JPA and Flyway migrations.
-- **API Documentation:** Swagger/OpenAPI documentation and Postman collection for API testing.
-- **Testing:** Unit tests using JUnit 5 and Mockito, with automated verification through GitHub Actions.
-- **Deployment:** Dockerized application with Docker Compose for local setup.
-- **Error Handling:** Request validation and structured API error responses.
-
-## In this project:
-
-- secure JWT-based authentication with refresh-token flow
-- role-based authorization for `USER` and `ADMIN`
-- PostgreSQL persistence with Flyway migrations
-- request validation and structured error handling
-- unit tests for auth and token logic
-- Dockerized local setup
-- Postman collection for quick API testing
-- GitHub Actions CI for automated verification
+- **Authentication & Authorization:** JWT-based login, refresh-token management, and role-based access control (`USER` and `ADMIN`).
+- **Database Management:** PostgreSQL persistence with Spring Data JPA and version-controlled Flyway migrations.
+- **API Development:** RESTful endpoints with request validation, structured error handling, and Swagger documentation.
+- **Testing & CI:** JUnit 5, Mockito, Postman, and automated GitHub Actions workflows.
+- **Containerization:** Docker Compose for reproducible local deployment.
 
 ## Tech Stack
 
