@@ -2,7 +2,21 @@
 
 A authentication service built with Spring Boot, Spring Security, JWT, PostgreSQL, Flyway, Docker, and CI support.
 
-## Why This Project Stands Out
+## Goal
+
+To develop a secure RESTful authentication microservice using Java, Spring Boot, and JWT, with role-based access control, refresh-token management, and PostgreSQL integration.
+
+## Project Deliverables
+
+- **Authentication APIs:** User registration, login, token refresh, and logout.
+- **Security:** JWT-based authentication, role-based authorization (`USER` and `ADMIN`), and refresh-token revocation.
+- **Database:** PostgreSQL integration using Spring Data JPA and Flyway migrations.
+- **API Documentation:** Swagger/OpenAPI documentation and Postman collection for API testing.
+- **Testing:** Unit tests using JUnit 5 and Mockito, with automated verification through GitHub Actions.
+- **Deployment:** Dockerized application with Docker Compose for local setup.
+- **Error Handling:** Request validation and structured API error responses.
+
+## In this project:
 
 - secure JWT-based authentication with refresh-token flow
 - role-based authorization for `USER` and `ADMIN`
